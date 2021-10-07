@@ -1,0 +1,6 @@
+package com.hsbc.shapes;
+
+public interface Shapes
+{
+    String area(int r);
+}
