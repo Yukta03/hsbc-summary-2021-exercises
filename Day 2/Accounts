@@ -1,0 +1,38 @@
+package com.hsbc.beans;
+
+public class Accounts {
+	private int accountno;
+	private long balance;
+	private String ifsc;
+	
+	public Accounts(int accountno,long balance,String ifsc) {
+		this.accountno = accountno;
+		this.balance = balance;
+		this.ifsc = ifsc;
+	}
+
+	public int accountno() {
+		return accountno ;
+	}
+	public void setaccountno(int accountno) {
+		this.accountno = accountno;
+	}
+	public long getbalance() {
+		return balance;
+	}
+	public void setbalance(long balance) {
+		this.balance = balance;
+	}
+	public String getifsc() {
+		return ifsc;
+	}
+	public void setifsc(String ifsc) {
+		this.ifsc = ifsc;
+	}
+	public String display()
+	{
+	String account_details ="Account no: " +accountno +" Balance: "+balance+ " IFSC Code: "+ ifsc;
+	return account_details;	
+	}
+
+}
